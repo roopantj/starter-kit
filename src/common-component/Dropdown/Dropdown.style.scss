@@ -1,0 +1,37 @@
+.drop-down {
+  cursor: pointer;
+  padding: 1rem;
+  background: #222;
+  width: fit-content;
+  color: #fff;
+
+  &--value {
+    display: flex;
+  }
+
+  &--arrow {
+    margin-left: 1rem;
+    height: 20px;
+    width: 20px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+
+    &.down {
+      transform: rotate(135deg);
+    }
+  }
+
+  &--option {
+    &:first-child {
+      border-top: unset;
+    }
+
+    &.active {
+      color: aqua;
+    }
+
+    border-top: 1px solid #fff;
+    padding: 1rem 0.5rem;
+  }
+}
